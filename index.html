@@ -46,25 +46,73 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #adb5bd;
+            background: black;
+		color: white; /* Cor do texto do cabeçalho do acordeão */
             border-radius: 5px;
         }
+
+		.accordion-header.active {
+    	color: #ffc107; /* Cor do texto do cabeçalho quando está ativo (amarelo) */
+		}
+
+
         .accordion-content {
             display: none;
             padding: 10px;
             border-top: 1px solid #ced4da;
-            background: #f8f9fa;
+            background: hite;
         }
         .active .accordion-content {
             display: block;
+		color:black; /* Cor do texto do cabeçalho do acordeão */
         }
         img {
             max-width: 100%;
             height: auto;
             border-radius: 5px;
         }
+.card {
+            background-color: white;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card h1 {
+            font-size: 3em;
+            margin-bottom: 0;
+            color: #333;
+        }
+        .card h2 {
+            margin-top: 5px;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .card p {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #666;
+        }
+        .card a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .icon {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .qr-code {
+            margin-top: 20px;
+        }
+
+
     </style>
     <script>
+
+
+
+
         function toggleAccordion(event) {
             const currentHeader = event.currentTarget;
             const currentAccordion = currentHeader.parentNode;
@@ -92,7 +140,7 @@
 </head>
 <body>
     <header>
-        <img src="https://s3.eu-west-1.amazonaws.com/data.systeme.io/3119789/66e21d8dde336_BilJInLogoprovicontafreenatdoc.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUPXBF7G6LPRQOXJD%2F20240911%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20240911T224536Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=4cb16a25e37f189340078f83d97a814e6b00a8acf902ee8608b62eec86538378" alt="Logo BilJin" style="max-width: 450px;">
+        <img src="https://d1yei2z3i6k35z.cloudfront.net/3119789/66e21d8dde336_BilJInLogoprovicontafreenatdoc.png" alt="Logo BilJin" style="max-width: 450px;">
        <!--  <h1>BilJin</h1>
         <p>Impressão de Valor</p> -->
     </header>
@@ -101,7 +149,7 @@
         <p>Enfrente os desafios da antecipação de receita e inove com nossas soluções de impressão.</p>
     </div>
     <div class="container">
-        <h2>Coisas Imprimíveis</h2>
+        <h3>Coisas Imprimíveis</h3>
         <p>Aqui estão algumas ideias de coisas imprimíveis que você pode considerar:</p>
         
         <div class="accordion">
@@ -202,11 +250,99 @@
             <div class="accordion-content">
                 <p>Modelos para testes em design de produtos. <img src="https://example.com/imagem-prototipagem.jpg" alt="Prototipagem"></p>
 
+ 				</div>
+        </div>
+  	<br>
+<div class="accordion">
+            <div class="accordion-header">
+                <span>Sobre</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <p>"Biljin" (比金) em chinês significa "mais valioso que o ouro" ou "superior ao ouro". A palavra "比" (bi) significa "comparar" e "金" (jin) significa "ouro". Portanto, a expressão sugere algo que é considerado mais precioso ou valioso do que o ouro.. <!-- <img src="https://example.com/imagem-personalizados.jpg" alt="Sobre"></p> -->
 
+
+<h1>O Interesse da China pela Impressão 3D no Brasil</h1>
+
+    <p>A relação do interesse na China pela impressão 3D aplicada no Brasil pode ser vista sob várias perspectivas:</p>
+
+    <h3>Crescimento do Setor</h3>
+    <p>A impressão 3D tem crescido rapidamente na China, que é um dos líderes mundiais em tecnologia e produção. O Brasil, com um mercado em expansão, representa uma oportunidade para empresas chinesas que buscam novos mercados para suas tecnologias.</p>
+
+    <h3>Parcerias e Investimentos</h3>
+    <p>Muitas empresas chinesas estão interessadas em estabelecer parcerias com empresas brasileiras para desenvolver e aplicar tecnologias de impressão 3D em setores como construção, saúde e manufatura. Isso pode incluir desde a fabricação de equipamentos até a criação de produtos finais.</p>
+
+    <h3>Transferência de Tecnologia</h3>
+    <p>A China possui um forte foco em inovação e desenvolvimento tecnológico. O interesse em colaborar com o Brasil pode resultar na transferência de tecnologia e know-how, beneficiando o desenvolvimento local e a capacitação de profissionais brasileiros.</p>
+
+    <h3>Sustentabilidade e Inovação</h3>
+    <p>Ambas as nações estão buscando soluções sustentáveis. A impressão 3D pode reduzir desperdícios e otimizar processos de produção, alinhando-se com as metas de desenvolvimento sustentável de ambos os países.</p>
+
+    <h3>Mercado de Consumo</h3>
+    <p>O Brasil é um grande mercado consumidor, e a impressão 3D pode ser aplicada em diversos setores, como moda, automotivo e eletrônicos. O interesse chinês pode ser impulsionado pela demanda brasileira por produtos personalizados e de alta tecnologia.</p>
+
+    <h3>Desenvolvimento Regional</h3>
+    <p>A impressão 3D pode ajudar a desenvolver regiões menos industrializadas no Brasil, criando novas oportunidades econômicas e empregos, o que pode ser atraente para investidores chineses.</p>
+
+    <p>Essa relação pode levar a um intercâmbio significativo de conhecimento, tecnologia e produtos entre os dois países, beneficiando ambos os lados.</p>
             </div>
         </div>
+
+		
+<br>
+
+<div class="accordion">
+ <div class="accordion-header">
+ <span>Contato</span>
+                <span>+</span>
+            <div class="accordion-content">
+                <p><img src="https://s3.eu-west-1.amazonaws.com/data.systeme.io/3119789/66e2213608223_bit.ly_astor-silva.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUPXBF7G6LPRQOXJD%2F20240911%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20240911T230112Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=26f9227e012cbba8589d892050c02e594c6f5c4fba3ec9f642b98112b8e3c2bf" alt="Contato"></p>
+					
+ 
+
+
+
+
+
+
+     <!--   <h1><strong>ASTOR SILVA</strong></h1>
+        <h3>COO - BilJin <br> Assessoria Consultiva</h3>
+        <p>Manufatura Aditiva, modelagem <br> Impressão 3D para negócios.</p> -->
+
+<p><img src="https://s3.eu-west-1.amazonaws.com/data.systeme.io/3119789/66e22769928de_ImagemdoWhatsAppde2024-09-11s19.29.01_bd8123d1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUPXBF7G6LPRQOXJD%2F20240911%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20240911T232740Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=24076d57c3e678c43b29b1d269d158ada4bdad1be43f9ede310d27a79324ce61" alt="Contato"></p>
+					
+
+
+<br>
+            </div>
+       </div>
+       
+
+ <!-- <div class="card">
+        <h1><strong>ASTOR SILVA</strong></h1>
+        <h2>COO - BilJin Assessoria Consultiva</h2>
+        <p>Manufatura Aditiva, modelagem <br> Impressão 3D para negócios.</p> 
+<br>
+
+        <p><img class="icon" src="https://image.shutterstock.com/image-vector/mail-icon-vector-260nw-753208208.jpg" alt="Email" width="20">
+        <a href="mailto:astor.silva@uol.com.br">astor.silva@uol.com.br</a></p>
+
+        <p><img class="icon" src="https://image.shutterstock.com/image-vector/phone-icon-vector-260nw-753212234.jpg" alt="Phone" width="20">
+        <a href="tel:+5511999404313">(11) 99940-4313</a></p>
+
+        <p><img class="icon" src="https://image.shutterstock.com/image-vector/instagram-icon-260nw-753222272.jpg" alt="Instagram" width="20">
+        <a href="https://www.instagram.com/manuditiva3D">@manuditiva3D</a></p>
+
+        <p><img class="icon" src="https://image.shutterstock.com/image-vector/linkedin-icon-260nw-753223847.jpg" alt="LinkedIn" width="20">
+        <a href="https://www.linkedin.com/in/astor-silva">www.linkedin.com/in/astor-silva</a></p>
+
+       
+        </div>
+ </div>
 <p> Escaneie o QR code abaixo para enviar uma mensagem diretamente:</p>
-<img src="https://s3.eu-west-1.amazonaws.com/data.systeme.io/3119789/66e2213608223_bit.ly_astor-silva.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUPXBF7G6LPRQOXJD%2F20240911%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20240911T230112Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=26f9227e012cbba8589d892050c02e594c6f5c4fba3ec9f642b98112b8e3c2bf" alt="QR Code para WhatsApp">
+<img src="https://s3.eu-west-1.amazonaws.com/data.systeme.io/3119789/66e2213608223_bit.ly_astor-silva.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUPXBF7G6LPRQOXJD%2F20240911%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20240911T230112Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=26f9227e012cbba8589d892050c02e594c6f5c4fba3ec9f642b98112b8e3c2bf" alt="QR Code para WhatsApp"> -->
+
+    </div>
 
     </div>
 </body>
