@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BilJin - Impressão de Valor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background: clack;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            padding: 50px 20px;
+            text-align: center;
+            background: #5a6268;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: white;
+        }
+        .accordion {
+            background: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .accordion-header {
+            padding: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #adb5bd;
+            border-radius: 5px;
+        }
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            border-top: 1px solid #ced4da;
+            background: #f8f9fa;
+        }
+        .active .accordion-content {
+            display: block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function toggleAccordion(event) {
+            const currentHeader = event.currentTarget;
+            const currentAccordion = currentHeader.parentNode;
+            const allAccordions = document.querySelectorAll('.accordion');
+
+            // Fechar todos os outros acordeões
+            allAccordions.forEach(accordion => {
+                if (accordion !== currentAccordion) {
+                    accordion.classList.remove("active");
+                }
+            });
+
+            // Alternar o acordeão clicado
+            currentAccordion.classList.toggle("active");
+        }
+        
+        // Adiciona o evento de clique para todos os acordeões
+        document.addEventListener("DOMContentLoaded", function() {
+            const headers = document.querySelectorAll(".accordion-header");
+            headers.forEach(header => {
+                header.addEventListener("click", toggleAccordion);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://s3.eu-west-1.amazonaws.com/data.systeme.io/3119789/66e21d8dde336_BilJInLogoprovicontafreenatdoc.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUPXBF7G6LPRQOXJD%2F20240911%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20240911T224536Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=4cb16a25e37f189340078f83d97a814e6b00a8acf902ee8608b62eec86538378" alt="Logo BilJin" style="max-width: 450px;">
+       <!--  <h1>BilJin</h1>
+        <p>Impressão de Valor</p> -->
+    </header>
+    <div class="hero">
+        <h2>Você está pronto para transformar suas ideias em negócios?</h2>
+        <p>Enfrente os desafios da antecipação de receita e inove com nossas soluções de impressão.</p>
+    </div>
+    <div class="container">
+        <h2>Coisas Imprimíveis</h2>
+        <p>Aqui estão algumas ideias de coisas imprimíveis que você pode considerar:</p>
+        
+        <div class="accordion">
+            <div class="accordion-header">
+                <span>Brinquedos</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Figuras, quebra-cabeças e modelos. <img src="https://example.com/imagem-brinquedos.jpg" alt="Brinquedos"></p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">
+                <span>Utensílios de Cozinha</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Copos, suportes e organizadores. <img src="https://example.com/imagem-utensilios.jpg" alt="Utensílios de Cozinha"></p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">
+                <span>Peças de Reposição</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Componentes para eletrodomésticos ou eletrônicos. <img src="https://example.com/imagem-reposicao.jpg" alt="Peças de Reposição"></p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">
+                <span>Acessórios</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Joias, relógios e itens de moda. <img src="https://example.com/imagem-acessorios.jpg" alt="Acessórios"></p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">
+                <span>Ferramentas</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Suportes, gabaritos e ferramentas personalizadas. <img src="https://example.com/imagem-ferramentas.jpg" alt="Ferramentas"></p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">
+                <span>Decoração</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Vasos, esculturas e enfeites. <img src="https://example.com/imagem-decoracao.jpg" alt="Decoração"></p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">
+                <span>Modelos Arquitetônicos</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Réplicas de edifícios ou projetos. <img src="https://example.com/imagem-arquitetonicos.jpg" alt="Modelos Arquitetônicos"></p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">
+                <span>Equipamentos de Escritório</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Organizadores e suportes para canetas. <img src="https://example.com/imagem-escritorio.jpg" alt="Equipamentos de Escritório"></p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">
+                <span>Produtos Personalizados</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Capas de celular, chaveiros e presentes. <img src="https://example.com/imagem-personalizados.jpg" alt="Produtos Personalizados"></p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-header">
+                <span>Prototipagem</span>
+                <span>+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Modelos para testes em design de produtos. <img src="https://example.com/imagem-prototipagem.jpg" alt="Prototipagem"></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
